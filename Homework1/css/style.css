@@ -1,0 +1,47 @@
+/* HEADER */
+.header{
+  margin-top: 10px;
+  margin-left: 550px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: arial;
+}
+
+/*CONTENT*/
+.box_img{
+  margin-top: 25px;
+  margin-left: 550px;
+  margin-bottom: 25px;
+}
+.img{
+  width: 200px;
+  height: 200px;
+  margin-left: 160px;
+  border: 2px solid gray;
+}
+.box{
+  margin-left: 530px;
+  width: 600px;
+  font-family: arial;
+}
+.fig1{
+  color: gray;
+  font-size: 15px;
+}
+.menu{
+  font-size: 20px;
+  font-weight: bold;
+}
+.line{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.box span, a{
+  margin-left: 42px;
+  font-size: 15px;
+}
+li{
+  font-size: 15px;
+}
