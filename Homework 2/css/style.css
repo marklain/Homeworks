@@ -38,3 +38,29 @@ p{
   height: 40px;
   background-color: #4b00fe;
 }
+.joy{
+  width: 230px;
+  height: 85px;
+  margin: 15px 0;
+  padding-top: 20px;
+  padding-left: 20px;
+  background-color: #fe6c2b;
+  font-size: 40px;
+}
+.zag{
+  width: 500px;
+  height: 220px;
+  padding-left: 8px;
+  background-color: #d5d6bd;
+}
+.zag h1{
+  padding-top: 15px;
+  color: #46250f;
+  font-family: arial;
+}
+.zag h3{
+  color: #7f5528;
+}
+.zag a{
+  color: #426801;
+}

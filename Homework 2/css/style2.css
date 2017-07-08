@@ -1,0 +1,42 @@
+.equation1{
+  width: 390px;
+  border: black 2px dashed;
+  padding-left: 3px;
+  padding-top: 3px;
+}
+.header{
+  font-size: 15px;
+}
+.ssitalic{
+  font-style: italic;
+}
+.equation2{
+  width: 395px;
+  height: 110px;
+  margin-top: 20px;
+  border: black 2px dashed;
+  padding-top: 10px;
+  padding-left: 1px;
+}
+.nitalic{
+  font-style: italic;
+}
+.equation2 p{
+  margin-left: 0;
+  font-size: 25px;
+  font-family: 'Times New Roman';
+  font-style: italic;
+}
+.equation2 span{
+  margin-left: 4px;
+}
+.index{
+  color: blue;
+  font-size: 15px;
+  font-style: normal;
+}
+.exponent{
+  color: red;
+  font-size: 15px;
+  font-style: normal;
+}
