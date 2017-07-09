@@ -27,16 +27,19 @@ p{
   width: 45px;
   height: 40px;
   background-color: red;
+  margin-bottom: 15px;
 }
 .two{
   width: 90px;
   height: 40px;
   background-color: orange;
+  margin-bottom: 15px;
 }
 .three{
   width: 140px;
   height: 40px;
   background-color: #4b00fe;
+  margin-bottom: 15px;
 }
 .joy{
   width: 230px;
