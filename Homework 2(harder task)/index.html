@@ -8,8 +8,10 @@
 </head>
 <body>
   <div class="wrapper">
+    <header>
     <img src="img/img.jpg" width="100%" alt="Рабочий момент">
-    <h1 class="header">Здорово.</h1>
+    <h1>Здорово.</h1>
+    </header>
       <p class="content">
         Получите бесплатный аудит Ваших
         страниц в социальных сетях и команда специалистов определит уровень их ведения. <br>
@@ -19,22 +21,23 @@
      </p>
     <form action="">
       <div class="inform">
-      <p>Имя<br>
-      <input type="text" name="" id="name" placeholder="Введите ваше имя">
-      </p>
-      <p>E-mail<br>
-      <input type="text" name="" id="email" placeholder="Введите ваш E-mail">
-      </p>
-      <p>Номер телефона<br>
-        <input id="first" type="text" name="" id="number" placeholder="+38">
-        <input id="center" type="text" name="" id="number" placeholder="(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)">
-        <input id="last" type="text" name="" id="number" placeholder="">
-      </p>
+      <div class="wrapper-box">Имя<br>
+      <input class="name" type="text" name="" title="Имя" placeholder="Введите ваше имя">
+    </div>
+      <div class="wrapper-box">
+        E-mail <input class="email" type="text" name="" title="E-mail" placeholder="Введите ваш E-mail">
+      </div>
+      <span>Номер телефона</span>
+      <div class="number">
+        <input class="first" type="text" name="" title="Номер телефона" placeholder="+38">
+        <input class="center" type="text" name="" title="Номер телефона" placeholder="(&nbsp;&nbsp;&nbsp;)">
+        <input class="last" type="text" name="" title="Номер телефона" placeholder="">
+      </div>
     </div>
       <input type="submit" value="Отправить">
     </form>
-      <p class="footer">
+      <footer>
         Ваши данные никогда не будут переданы 3-м лицам
-      </p>
+      </footer>
 </body>
 </html>
