@@ -1,0 +1,54 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  width: 400px;
+  height: 550px;
+  margin: auto;
+  font-family: tahoma;
+}
+.img{
+  width: 250px;
+  height: 285px;
+  margin: auto;
+
+}
+.wrapper{
+  width: 378px;
+  height: 528px;
+  margin: 10px 10px 10px 10px;
+  border: 1px #5a5a5a solid;
+}
+header{
+  margin: 10px 0px 20px 0px;
+  font-size: 22px;
+  text-align: center;
+}
+.sidebar{
+  width: 193px;
+  height: 34px;
+  margin-top: 3px;
+  color: white;
+  text-align: center;
+  font-weight: normal;
+  font-size: 22px;
+  background-image:  url(../img/greenblock.png);
+}
+.price{
+  margin: 10px 0px 15px 0px;
+  font-size: 31px;
+  text-align: center;
+}
+
+footer{
+  width: 229px;
+  height: 47px;
+  margin: auto;
+  padding-top: 3px;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  text-shadow: -1px 1px 0px black;
+  background-image: url(../img/redblock.png)
+}
