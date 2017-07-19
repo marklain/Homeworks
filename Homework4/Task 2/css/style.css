@@ -1,0 +1,18 @@
+.wrapper{
+  height: 600px;
+  width: 600px;
+  margin: 40px auto;
+  border: 1px black solid;
+  background-image: url(../img/background.png)
+}
+.bishop{
+  margin-left: 259px;
+  margin-top: 23px;
+}
+.knight{
+  margin-top: 20px;
+}
+.rook{
+  margin-top: 40px;
+  margin-left: 249px;
+}
