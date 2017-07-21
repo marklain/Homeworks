@@ -8,7 +8,8 @@ body{
   margin: auto;
   font-family: tahoma;
 }
-.img{
+img{
+  display: block;
   width: 250px;
   height: 285px;
   margin: auto;
@@ -20,15 +21,18 @@ body{
   margin: 10px 10px 10px 10px;
   border: 1px #5a5a5a solid;
 }
-header{
+h1{
   margin: 10px 0px 20px 0px;
-  font-size: 22px;
   text-align: center;
+  font-size: 22px;
+  font-weight: normal;
 }
-.sidebar{
+.credit{
   width: 193px;
   height: 34px;
   margin-top: 3px;
+  padding-bottom: 4px;
+  border: none;
   color: white;
   text-align: center;
   font-weight: normal;
@@ -41,11 +45,13 @@ header{
   text-align: center;
 }
 
-footer{
+.buy{
+  display: block;
   width: 229px;
-  height: 47px;
+  height: 49px;
   margin: auto;
-  padding-top: 3px;
+  padding-bottom: 3px;
+  border: none;
   color: white;
   text-align: center;
   font-size: 28px;

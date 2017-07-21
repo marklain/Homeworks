@@ -1,18 +1,30 @@
-.wrapper{
+.board{
   height: 600px;
   width: 600px;
   margin: 40px auto;
   border: 1px black solid;
-  background-image: url(../img/background.png)
+}
+.board div{
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+.board div:nth-child(odd){
+  background-color: #850000;
+}
+.board div:nth-child(even){
+  background-color: white;
 }
 .bishop{
-  margin-left: 259px;
-  margin-top: 23px;
+  margin-top: 20px;
+  margin-left: 57px;
+
 }
 .knight{
-  margin-top: 20px;
+  margin-top: 25px;
+  margin-left: 43px;
 }
 .rook{
-  margin-top: 40px;
-  margin-left: 249px;
+  margin-top: 25px;
+  margin-left: 50px;
 }
