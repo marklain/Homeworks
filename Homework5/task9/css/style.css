@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.waterworld{
+  position: relative;
+  width: 560px;
+  height: 440px;
+  background-color: #80cdc6;
+}
+.clouds{
+  position: absolute;
+  width: 60%;
+  top: -5px;
+  left: 215px;
+}
+.water{
+  position: absolute;
+  top: 393px;
+  left: 0px;
+  z-index: 2;
+}
+.wooden{
+  position: absolute;
+  top: 285px;
+  left: 12px;
+  width: 21%;
+  z-index: 1;
+}
+.world{
+  position: absolute;
+  top: 95px;
+}

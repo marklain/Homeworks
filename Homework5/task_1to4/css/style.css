@@ -1,0 +1,40 @@
+.parent1 {
+  width: 440px;
+  height: 440px;
+  background: #FF6600;
+
+}
+.rows {
+  width: 100px;
+  height: 100px;
+  background: #00F1FF;
+  margin: 5px;
+  float: left;
+}
+.parent {
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+  background: #ffffff;
+  border: 1px black solid;
+
+}
+.first{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  float: left;
+}
+.second{
+  width: 100px;
+  height: 100px;
+  clear: both;
+  margin: 0 auto;
+  background-color: red;
+}
+.third{
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  float: right;
+}
