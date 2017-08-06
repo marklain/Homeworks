@@ -1,0 +1,119 @@
+/*TABLE 1*/
+.table1{
+  border-collapse: collapse;
+  font-family: arial;
+  text-align: center;
+}
+.table1 td{
+  padding: 5px;
+}
+.first{
+  text-align: left;
+}
+/*END OF TABLE 1*/
+
+/*TABLE 2*/
+.table2{
+  margin-top: 50px;
+  width: 600px;
+  height: 200px;
+  font-family: 'Source Sans Pro';
+  background-color: #fcfcfc;
+  border-collapse: collapse;
+}
+.table2 td{
+  padding: 15px;
+}
+.head{
+  border-bottom: 1px #d0d0d0 solid;
+  font-weight: bold;
+}
+/*END OF TABLE2*/
+
+/*TABLE 3*/
+.table3{
+  margin-top: 50px;
+  width: 600px;
+  height: 200px;
+  font-family: 'Source Sans Pro';
+  background-color: #fcfcfc;
+  border-collapse: collapse;
+}
+.table3 td{
+  padding: 15px;
+}
+.table3 tr{
+  border-bottom: 1px #d0d0d0 solid;
+}
+/*END OF TABLE 3*/
+
+/*TABLE 4*/
+.wrapper{
+    padding: 15px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 750px;
+    box-shadow: 0 0 20px black;
+}
+.table4{
+  font-family: arial;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+.table4 td{
+  padding: 10px;
+}
+.name{
+  color: red;
+}
+.head{
+  font-weight: bold;
+}
+.bord{
+  border-bottom: 1px #d0d0d0 solid;
+}
+.button1{
+  width: 35px;
+  height: 35px;
+  background-color: red;
+  border: none;
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.button2{
+  width: 80px;
+  height: 35px;
+  background-color: #dc4e45;
+  border: none;
+  color: white;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: tahoma;
+  font-size: 14px;
+  font-weight: bold;
+}
+p{
+  text-align: right;
+  font-size: 18px;
+  font-family: arial;
+}
+p span{
+  color: #a29999;
+  font-size: 16px;
+}
+a{
+  display: block;
+  color: red;
+  width: 180px;
+  margin: auto;
+  font-family: tahoma;
+  font-size: 17px;
+  font-style: italic;
+  text-decoration: none;
+}
