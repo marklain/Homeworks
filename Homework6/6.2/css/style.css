@@ -16,17 +16,17 @@
 .table2{
   margin-top: 50px;
   width: 600px;
-  height: 200px;
+  height: 300px;
   font-family: 'Source Sans Pro';
   background-color: #fcfcfc;
   border-collapse: collapse;
 }
-.table2 td{
+.table2 td, th{
   padding: 15px;
 }
-.head{
+thead{
   border-bottom: 1px #d0d0d0 solid;
-  font-weight: bold;
+  text-align: left;
 }
 /*END OF TABLE2*/
 
@@ -39,7 +39,7 @@
   background-color: #fcfcfc;
   border-collapse: collapse;
 }
-.table3 td{
+.table3 td, th{
   padding: 15px;
 }
 .table3 tr{
@@ -102,6 +102,8 @@ p{
   text-align: right;
   font-size: 18px;
   font-family: arial;
+  padding-right: 10px;
+  border-right: 5px #eeeeee solid;
 }
 p span{
   color: #a29999;
@@ -116,4 +118,19 @@ a{
   font-size: 17px;
   font-style: italic;
   text-decoration: none;
+}
+.close{
+  position: absolute;
+  display: block;
+  top: 853px;
+  left: 770px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+.close img{
+  width: 30px;
+  height: 30px;
 }
