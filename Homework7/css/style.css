@@ -1,0 +1,133 @@
+body{
+	background-size: 100% 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: 150%;
+	font-weight: normal;
+	font-variant: normal;
+	background-attachment: fixed;
+	background-color: #FFF;
+	background-image: url(../img/strip.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-align: left;
+}
+#redlink{
+  color: red;
+}
+.wrapper{
+	width: 960px;
+	background-image:url(../img/header-bg.png);
+	background-repeat:repeat-x;
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 0 0 10px;
+	background-color: #FFFFFF;
+	margin: 25px auto;
+	border: 1px solid #000000;
+	text-align: left;
+}
+header{
+	height:120px;
+	float:left;
+	width:100%;
+	margin-bottom:40px;
+}
+.menu2{
+  margin-top: 40px;
+}
+.sidebar1 a{
+  color:#000;
+}
+.sidebar1 a:hover{
+  text-decoration: underline;
+  color: red;
+}
+.sidebar1{
+	float: left;
+	width: 200px;
+	padding: 15px 10px 15px 20px;
+}
+.sidebar1 ul{
+	margin: 0px;
+	padding-left: 20px;
+	line-height: 150%;
+}
+.sidebar1 ul  li{
+  margin: 10px 0;
+}
+.sidebar1 ul  li a{
+	color:#000;
+	font-size:13px;
+	text-decoration:none;
+}
+.sidebar1 ul  li a:hover{
+	color:#000;
+	text-decoration:underline;
+}
+.mainContent{
+	width:680px;
+	padding: 0 20px;
+	float:right;
+}
+footer{
+	padding: 0 10px 0 20px;
+	background:#DDDDDD;
+	height:90px;
+}
+footer p{
+	margin: 0;
+	padding: 10px 0;
+}
+.clearfloat{
+	clear:both;
+  height:0;
+  font-size: 1px;
+  line-height: 0px;
+}
+.contacts{
+  width: 400px;
+  height: 100px;
+  margin: 10px;
+  float: right;
+  line-height: 21px;
+  font-size: 14px;
+}
+.contacts1{
+  width: 180px;
+  float: left;
+  padding-right: 20px;
+}
+.contacts2{
+  width: 200px;
+  float: left;
+}
+.textbold{
+  font-weight: bold;
+}
+.logo{
+  width:300px;
+  height:100px;
+  margin: 10px;
+  padding:10px;
+  float:left;
+}
+h1{
+	line-height:150%;
+}
+.centerimg{
+  display: block;
+  text-align: center;
+}
+.bordered{
+  width: 300px;
+	margin:15px;
+	border-radius:10px;
+	border:5px solid #00698c;
+}
+.bordered1{
+  width: 600px;
+	margin:15px;
+	border-radius:10px;
+	border:5px solid #00698c;
+}
