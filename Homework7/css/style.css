@@ -36,36 +36,36 @@ header{
 .menu2{
   margin-top: 40px;
 }
-.sidebar1 a{
+aside a{
   color:#000;
 }
-.sidebar1 a:hover{
+aside a:hover{
   text-decoration: underline;
   color: red;
 }
-.sidebar1{
+aside{
 	float: left;
 	width: 200px;
 	padding: 15px 10px 15px 20px;
 }
-.sidebar1 ul{
+aside ul{
 	margin: 0px;
 	padding-left: 20px;
 	line-height: 150%;
 }
-.sidebar1 ul  li{
+aside ul  li{
   margin: 10px 0;
 }
-.sidebar1 ul  li a{
+aside ul  li a{
 	color:#000;
 	font-size:13px;
 	text-decoration:none;
 }
-.sidebar1 ul  li a:hover{
+aside ul  li a:hover{
 	color:#000;
 	text-decoration:underline;
 }
-.mainContent{
+main{
 	width:680px;
 	padding: 0 20px;
 	float:right;
