@@ -32,7 +32,7 @@
     font-weight: 300;
   }
   aside{
-    width: 30%;
+    width: 50%;
 
   }
   .info{
@@ -53,9 +53,9 @@
     width: 100%
   }
 }
-@media (max-width: 959px){
+@media (max-width: 1100px){
   .wrapper{
-    width: 50%;
+    width: 90%;
     margin: 0 auto;
   }
   header{
@@ -88,6 +88,7 @@
     font-weight: 300;
   }
   .info{
+    width: 95%;
     padding: 10px;
     background-color: #cdf0f6;
   }
@@ -95,6 +96,8 @@
     font-weight: 300
   }
   main{
+  width: 100%;
+  margin-left: 0px;
   margin-bottom: 10px;
   }
   main p{
