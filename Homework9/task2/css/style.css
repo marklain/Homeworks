@@ -1,0 +1,81 @@
+.logo{
+  height: 80px;
+  margin-left: 0!important;
+  justify-content: center;
+  margin-right: 8px;
+}
+.items{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10.3%!important;
+  height: 40px;
+  color: white;
+}
+.row1{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+}
+.row2{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.link{
+  padding: 0!important;
+  width: 11.3%!important;
+}
+.name{
+  padding: 0!important;
+}
+.name h5{
+  font-weight: bold;
+}
+.nav{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 793px;
+}
+.img{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  height: 180px;
+  width: 100%!important;
+  margin-right: 10px!important;
+  justify-content: center;
+  align-items: center;
+}
+.firstrow{
+  width: 37.5%!important;
+  padding-right: 0!important;
+  padding-bottom: 50px!important;
+
+}
+.firstrow p{
+  margin-top: 0px;
+}
+.firstrow h5{
+  margin-bottom: 2px;
+  font-weight: bold;
+}
+.secondrow{
+  padding-right: 0!important;
+  padding-bottom: 50px!important;
+}
+.secondrow p{
+  margin-top: 0px;
+}
+.secondrow h5{
+  margin-bottom: 2px;
+  font-weight: bold;
+}
