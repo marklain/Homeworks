@@ -2,7 +2,6 @@
   height: 80px;
   margin-left: 0!important;
   justify-content: center;
-  margin-right: 8px;
 }
 .items{
   display: -webkit-flex;
@@ -10,9 +9,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10.3%!important;
+  width: calc(99%/7);
   height: 40px;
   color: white;
+}
+.items1{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 0!important;
 }
 .row1{
   display: -webkit-flex;
@@ -20,16 +26,14 @@
   display: flex;
   align-items: center;
 }
-.row2{
+.link{
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-}
-.link{
+  justify-content: flex-end;
   padding: 0!important;
-  width: 11.3%!important;
+  height: 49.13px;
 }
 .name{
   padding: 0!important;
@@ -55,27 +59,18 @@
   justify-content: center;
   align-items: center;
 }
-.firstrow{
-  width: 37.5%!important;
-  padding-right: 0!important;
+.row3{
+  padding: 0!important;
   padding-bottom: 50px!important;
+}
+.column3{
+  padding-right: 0!important;
+}
 
-}
-.firstrow p{
+.column3 p{
   margin-top: 0px;
 }
-.firstrow h5{
-  margin-bottom: 2px;
-  font-weight: bold;
-}
-.secondrow{
-  padding-right: 0!important;
-  padding-bottom: 50px!important;
-}
-.secondrow p{
-  margin-top: 0px;
-}
-.secondrow h5{
+.column3 h5{
   margin-bottom: 2px;
   font-weight: bold;
 }
