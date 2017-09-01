@@ -1,6 +1,5 @@
 .logo{
   height: 80px;
-  margin-left: 0!important;
   justify-content: center;
 }
 .items{
@@ -13,12 +12,12 @@
   height: 40px;
   color: white;
 }
-.items1{
+.row .items1{
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   justify-content: space-between;
-  padding-right: 0!important;
+  padding-right: 0;
 }
 .row1{
   display: -webkit-flex;
@@ -26,17 +25,17 @@
   display: flex;
   align-items: center;
 }
-.link{
+.row .link{
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 0!important;
+  padding: 0;
   height: 49.13px;
 }
-.name{
-  padding: 0!important;
+.row .name{
+  padding: 0;
 }
 .name h5{
   font-weight: bold;
@@ -54,17 +53,15 @@
   display: -ms-flex;
   display: flex;
   height: 180px;
-  width: 100%!important;
-  margin-right: 10px!important;
   justify-content: center;
   align-items: center;
 }
-.row3{
-  padding: 0!important;
-  padding-bottom: 50px!important;
+.row .row3{
+  padding: 0;
+  padding-bottom: 50px;
 }
-.column3{
-  padding-right: 0!important;
+.row .column3{
+  padding-right: 0;
 }
 
 .column3 p{
