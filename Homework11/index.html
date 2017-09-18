@@ -11,34 +11,34 @@
 <div class="wrapper">
 		<header>
 				<div class="logo">
-					<img src="img/main.jpg" alt="">
+					<a href="#"><img src="img/main.jpg" alt=""></a>
 				</div>
 				<div class="preferences">
-					<p class="shop-cart">
+					<div class="shop-cart">
 						<span class="text2">Shopping Cart:<br></span>
 						<span class="text1">0 items</span>
-					</p>
-					<!-- <img class="vertical-line1" src="images/main-04.jpg" alt=""> -->
-					<p class="text2 language">
-						Choose your language:
-						<a href="#"><img class="english" src="img/english.jpg" alt=""></a>
-						<a href="#"><img class="german" src="img/german.jpg" alt=""></a>
-						<a href="#"><img class="spanish" src="img/spanish.jpg" alt=""></a>
-					</p>
-					<!-- <img class="vertical-line2" src="images/main-06.jpg" alt=""> -->
-					<p class="text2 currencies">Currencies <br>
-						<select class="currencies-select" name="select">
+					</div>
+					<div class="choosing_language">
+					<p class="text2 caption_language">Choose your language:</p>
+						<ul>
+							<li><a href="#"><img class="english" src="img/english.jpg" alt=""></a></li>
+							<li><a href="#"><img class="german" src="img/german.jpg" alt=""></a></li>
+							<li><a href="#"><img class="spanish" src="img/spanish.jpg" alt=""></a></li>
+						</ul>
+						</div>
+					<div class="text2 currencies">
+						<label for="currencies">Currencies</label>
+						<select class="currencies_select" id="currencies" name="select">
 								<option>US Dollar</option>
 								<option>Euro</option>
 						</select>
-					</p>
+					</div>
 				</div>
 		</header>
 		<!-- End of HEADER -->
-		<div class="wrap">
-		<aside class="sidebar">
+			<section>
 				<nav>
-					<ul class="navigation">
+					<ul>
 						<li><a href="#">Home Page</a></li>
 						<li><a href="#">New Products</a></li>
 						<li><a href="#">Specials</a></li>
@@ -46,10 +46,22 @@
 						<li><a href="#">Contact us</a></li>
 					</ul>
 				</nav>
-				<p class="browse-head">
+				<div class="news">
+					<img class="cameras" src="img/cameras.png" alt="">
+					<img class="cheap" src="img/cheap.png" alt="">
+					<div class="spec-edit">
+					<a href="#">
+						Special edition <span>WEB CAMERAS</span> <br>with an incredible price !
+					</a>
+				</div>
+				</div>
+			</section>
+			<section>
+		<aside>
+				<h4 class="browse_caption">
 					browse by category
-				</p>
-				<ul class="browse-list">
+				</h4>
+				<ul class="browse_list">
 					<li><a href="#">Barebones</a></li>
 					<li><a href="#">CD / DVD Drives &amp; Media</a></li>
 					<li><a href="#">Digital</a></li>
@@ -75,15 +87,6 @@
 		</aside>
 		<!-- End of Aside -->
 		<main>
-			<div class="news">
-				<img class="cameras" src="img/cameras.png" alt="">
-				<img class="cheap" src="img/cheap.png" alt="">
-				<div class="spec-edit">
-				<a href="#">
-					Special edition <span>WEB CAMERAS</span> <br>with an incredible price !
-				</a>
-			</div>
-			</div>
 			<div class="feature-prod">
 				<span class="feature-head">FEATURED PRODUCTS</span>
 				<!-- PRODUCT 1 -->
@@ -144,7 +147,7 @@
 				</div>
 				<!-- END OF PRODUCT4 -->
 				<div class="product5">
-						<button class="button5">Details</button>
+						<button class="button3">Details</button>
 				</div>
 				<!-- END OF PRODUCT5 -->
 				<div class="product6">
@@ -153,20 +156,24 @@
 				<!-- END OF PRODUCT6 -->
 			</div>
 		</main>
-	</div>
+	</section>
 		<footer>
 			<div class="cards">
-				<img src="img/cards.png" alt="">
+				<ul>
+					<li><a href="#"><img src="img/paypal.png" alt=""></a></li>
+					<li><a href="#"><img src="img/visa.png" alt=""></a></li>
+					<li><a href="#"><img src="img/mscard.png" alt=""></a></li>
+				</ul>
 			</div>
-			<p class="info">
-				<a href="#">specials</a>
-				<a href="#">Site Search</a>
-				<a href="#">Contact Us</a>
-				<a href="#">Create an Account</a>
-				<a href="#">Customer Login</a>
-				<br>
-				Copyrigth &copy; Your Company Name
-			</p>
+			<div class="info">
+				<ul>
+					<li><a href="#">specials</a></li>
+					<li><a href="#">Site Search</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Create an Account</a></li>
+					<li><a href="#">Customer Login</a></li>
+				</ul>Copyrigth &copy; Your Company Name
+			</div>
 		</footer>
 </div>
 </body>
