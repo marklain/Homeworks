@@ -5,9 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Homework JS 2</title>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
+    <label for="indexOfElementInArray">Добавить элемент с указанием индекса</label><br> <br>
+    <input type="text" placeholder="Индекс елемента" id="indexOfElementInArray">
+    <input type="text" placeholder="Значение елемента" id="valueOfElementInArray">
+    <button onclick="elementAdder()">ОК</button>
+    <button onclick="pow1()">POP</button>
+    <button onclick="pow2()">SHIFT</button><br><br>
+    <input type="text" placeholder="Значение елемента" id="valueOfPushAdder">
+    <button onclick="pow3()">PUSH</button>
+    <hr>
     <p id="new"></p>
 </body>
 </html>
