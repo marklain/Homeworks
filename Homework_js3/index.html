@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework JS3</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <p>Paragraph</p>
+    <p>Paragraph</p>
+    <p>Paragraph</p>
+    <img src="images/hulk.png" alt="">
+    <img src="images/im.png" alt="">
+    <img src="images/thor.png" alt=""> <br>
+    <button>Нажми меня сколько хочешь раз</button>
+    <button>Или меня нажми, как хочешь</button>
+    <div id="targetCounter"></div>
+    <input type="text" placeholder="Введите число" name="" id="num">
+    <input type="text" placeholder="Введите степень" name="" id="exp">
+    <input type="submit" value="Расчитать" onclick="exponentiation()">
+    <h3>Введите тэг без скобок и нажмите ENTER</h3>
+    <input type="text" placeholder="Введите тэг" id="tagBorderBot">
+    <input type="submit" onclick="addBorderBot()" value="Применить">
+    <h3>Введите свой возраст и нажмите ENTER</h3>
+    <input type="text" name="" placeholder="Введите свой возраст"  id="userAge">
+    <input type="submit" value="Войти" onclick="ageChecker()"><br><br>
+    <button onclick="masLengthCounter(massive)">Вывести длину массива</button>
+    <h3>Задание №10, Введите число и нажмите ENTER</h3>
+    <input type="text" name="" placeholder="Введите число" id="numberForCheck">
+    <h3>Осталось попыток : <span id="randomOut">3</span></h3>
+    <input type="text" placeholder="Введите число" id="userVariantOfNumber">
+    <input type="submit" value="Опробовать удачу" onclick="checkRandomNumber()">
+</body>
+</html>
