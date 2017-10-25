@@ -49,11 +49,14 @@ document.querySelector('#trigger').addEventListener('click', function(e) {
     if (triggerCounter == 0) {
         this.style.left = '105px';
         triggerCounter = 1;
+        console.log(triggerCounter);
     } else if (triggerCounter == 1) {
         this.style.left = '205px';
         triggerCounter = 2;
+        console.log(triggerCounter);
     } else if (triggerCounter == 2) {
         this.style.left = '5px';
         triggerCounter = 0;
+        console.log(triggerCounter);
     }
 });
