@@ -1,0 +1,98 @@
+*{
+    margin: 10px auto;
+}
+body {
+    background-image: linear-gradient(to right, #16222A 0%, #3A6073 51%, #16222A 100%);
+
+
+}
+h3, p, button{
+    width: 150px;
+    padding: 15px;
+    border: 1px solid #77A1D3;
+    border-radius: 5px;
+    color: #a5caf6;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+h3 {
+    text-align: center;
+}
+#firstTaskBlock {
+    width: 300px;
+    height: 200px;
+    background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%);
+    border: 1px solid rgba(119, 161, 195, 0.6);
+    border-radius: 5px;
+}
+#firstTaskOut {
+    width: 55px;
+}
+#secondTaskBlock {
+    width: 200px;
+    height: 200px;
+    background-image: url(./img/closed.svg);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+#thirdTaskBlock {
+    display: inline-block;
+    margin: 2px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(119, 161, 195, 0.8);
+    transition: 0.5s all;
+}
+#blockAdder {
+    width: 185px;
+    margin: 30px auto;
+    padding: 20px;
+    display: block;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 19px;
+}
+#blockAdder:active {
+    background-color: rgba(119, 161, 195, 0.8);
+}
+#fourthTaskDiv {
+    width: 100%;
+    height: 250px;
+    border: 1px solid rgba(119, 161, 195, 0.6);
+    background-size: contain;
+}
+#fifthTaskBlock {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(119, 161, 195, 0.6);
+    background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%);
+    cursor: pointer;
+}
+#trigger {
+    display: inline-block;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    margin: 0;
+    top: 5px;
+    left: 5px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%);
+    cursor: pointer;
+    transition: 0.5s all;
+}
+.wrapOfTrigger {
+    position: relative;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid #77A1D3;
+}
+.fourth-task-img {
+    cursor: pointer;
+}
+.wrapper-img {
+    display: flex;
+    justify-content: center;
+}
