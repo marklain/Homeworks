@@ -1,0 +1,49 @@
+* {
+    margin: 10px auto;
+}
+body {
+    background-image: linear-gradient(to right, #16222A 0%, #3A6073 51%, #16222A 100%);
+}
+input[type='text'], label, h3, button, p{
+    width: 150px;
+    padding: 15px;
+    border: 1px solid #77A1D3;
+    border-radius: 5px;
+    color: #a5caf6;
+    background: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    outline: 0;
+}
+h3 {
+    text-align: center;
+}
+label {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+
+}
+button {
+    margin: auto;
+    width: 40px;
+    padding: 15px;
+    font-size: 13px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+form {
+    width: 300px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+p {
+    width: 250px;
+    height: 200px;
+    margin: 0 auto;
+}
+#getInfoFirstTask {
+    width: 100px;
+    margin: 0 auto;
+}
