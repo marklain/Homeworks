@@ -47,3 +47,13 @@ p {
     width: 100px;
     margin: 0 auto;
 }
+.error-task1 {
+    display: block;
+    width: 30px;
+    border: none;
+    color: red;
+    font-size: 13px;
+}
+input::-webkit-input-placeholder {
+    color: red;
+}
