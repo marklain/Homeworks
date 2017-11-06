@@ -1,15 +1,39 @@
+#getInfoFirstTask, #elementListAdder {
+    width: 100px;
+    margin: 0 auto;
+}
+#chekerOfHeading {
+    width: 150px;
+    margin: 10px auto;
+}
+#sixTaskWrap {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border: 1px solid #77A1D3;
+    box-shadow: 0px 0px 10px #77A1D3;
+    background: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+#sixTaskWrap img {
+    position: absolute;
+    top: 80px;
+    left: 90px;
+}
 * {
     margin: 10px auto;
 }
 body {
     background-image: linear-gradient(to right, #16222A 0%, #3A6073 51%, #16222A 100%);
 }
-input[type='text'], label, h3, button, p{
+input[type='text'], .link-task-7, li, label, h3, button, p{
     width: 150px;
     padding: 15px;
     border: 1px solid #77A1D3;
     border-radius: 5px;
     color: #a5caf6;
+    box-shadow: 0px 0px 10px #77A1D3;
     background: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -25,9 +49,9 @@ label {
 
 }
 button {
-    margin: auto;
+    display: block;
+    margin: 10px auto;
     width: 40px;
-    padding: 15px;
     font-size: 13px;
     margin-left: 5px;
     cursor: pointer;
@@ -40,12 +64,20 @@ form {
 }
 p {
     width: 250px;
-    height: 200px;
     margin: 0 auto;
 }
-#getInfoFirstTask {
-    width: 100px;
-    margin: 0 auto;
+input[type="text"] {
+    display: block;
+}
+input::-webkit-input-placeholder {
+    color: red;
+}
+li {
+    padding: 5px;
+}
+.openerWindow {
+    width: 300px;
+    margin: 10px auto;
 }
 .error-task1 {
     display: block;
@@ -54,6 +86,48 @@ p {
     color: red;
     font-size: 13px;
 }
-input::-webkit-input-placeholder {
+.second-task-out {
+    padding: 15px;
+    font-size: 13px;
+    text-align: center;
+    cursor: pointer;
+}
+.task5-red {
+    background: #16222A;
+}
+.six-task-block {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 25px;
+    color: #77A1D3;
+    height: 300px;
+    width: 0px;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+.six-task-block-hide {
+    width: 100%;
+}
+.task-wrap {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.link-task-7 {
+    width: 80px;
+    font-size: 15px;
+}
+.block-info-task-7 {
+    width: 500px;
+    height: 70px;
+    font-size: 14px;
+}
+.error {
     color: red;
 }
