@@ -1,159 +1,161 @@
 var form = document.getElementById('firstTaskForm');
 var whatOption;
 var secondTaskOut = document.querySelector('.second-task-out');
+
+function colorizer(e) {
+    if (this.className == '') {
+        this.classList.add('task5-red');
+    } else if (this.className != '') {
+        this.classList.remove(this.className);
+    }
+}
+function attributeCheker(event, atr, str, element) {
+    if (atr != '') {
+        atr = str + '= ' + atr + '<br>';
+    } else {
+        atr = str + '= <span class="error">Атрибут отсутствует</span><br>';
+        element.style.border = '2px solid red';
+    }
+    return atr;
+}
 document.querySelector('#inputAdder').addEventListener('click', function(e) {
     // this.insertAdjacentHTML('afterEnd', '<input type="text"><button id="inputDeleter">-</button>');
-    var inputFirstTask = document.createElement('input');
-    var buttonDeleter = document.createElement('button');
-    inputFirstTask.type = 'text';
-    inputFirstTask.className = 'firstTaskInput'
-    buttonDeleter.className = 'inputDeleter';
-    buttonDeleter.innerHTML = '-';
-    buttonDeleter.addEventListener('click', function(e) {
-        inputFirstTask.remove();
-        this.remove();
-    });
     if (form.querySelectorAll('.firstTaskInput').length > 4) {
         alert('Превышено количество допустимых INPUT');
         return;
     }
-    form.insertBefore(inputFirstTask, getInfoFirstTask);
-    form.insertBefore(buttonDeleter, getInfoFirstTask);
+    var inputFirstTask = document.createElement('input');
+    var buttonDeleter = document.createElement('button');
+    var inputBlock = document.createElement('div');
+
+    inputFirstTask.type = 'text';
+    inputFirstTask.className = 'firstTaskInput'
+
+    buttonDeleter.className = 'inputDeleter';
+    buttonDeleter.innerHTML = '-';
+    buttonDeleter.addEventListener('click', function(e) {
+        this.parentNode.remove();
+    });
+    inputBlock.className = 'blockFirstTask'
+    inputBlock.appendChild(inputFirstTask);
+    inputBlock.appendChild(buttonDeleter);
+    form.insertBefore(inputBlock, getInfoFirstTask);
 });
+
+
 document.querySelector('#getInfoFirstTask').addEventListener('click', function(e) {
-    var outString = '';
     var inputs = document.querySelectorAll('.firstTaskInput');
     var out = document.querySelector('#firstTaskOut');
+    var outString = '';
 
-
-    if (document.querySelector('#oddRadio').checked == true) {
-
-        for (var i = 0; i < inputs.length; i++) {
-            if (i % 2 != 0) {
-                if (inputs[i].value != '') {
-                    outString += inputs[i].value + '<br>';
-                    inputs[i].style.border = 'border: 1px solid #77A1D3';
-                    inputs[i].style.boxShadow = '0px 0px 10px #77A1D3';
-                } else {
-                    inputs[i].style.border = '1px solid red';
-                    inputs[i].style.boxShadow = '0px 0px 10px red';
-                    inputs[i].placeholder = 'Заполните поле!';
-                    return;
-                }
-            }
-        }
-    } else if (document.querySelector('#evenRadio').checked == true) {
-
-        for (var i = 0; i < inputs.length; i++) {
-            if (i % 2 == 0) {
-                if (inputs[i].value != '') {
-                    outString += inputs[i].value + '<br>';
-                    inputs[i].style.border = '1px solid #77A1D3';
-                    inputs[i].style.boxShadow = '0px 0px 10px #77A1D3';
-                } else {
-                    inputs[i].style.border = '1px solid red';
-                    inputs[i].style.boxShadow = '0px 0px 10px red';
-                    inputs[i].placeholder = 'Заполните поле!';
-                    return;
-                }
-            }
-        }
-    } else {
-        for (var i = 0; i < inputs.length; i++) {
-            if (inputs[i].value != '') {
-                outString += inputs[i].value + '<br>';
-                inputs[i].style.border = '1px solid #77A1D3';
-                inputs[i].style.boxShadow = '0px 0px 10px #77A1D3';
-            } else {
-                inputs[i].style.border = '1px solid red';
-                inputs[i].style.boxShadow = '0px 0px 10px red';
-                inputs[i].placeholder = 'Заполните поле!';
-                return;
-            }
-        }
+    function erorrer(arr) {
+        arr[i].classList.add('error-task1');
+        arr[i].placeholder = 'Заполните поле!';
     }
+    function adder(arr) {
+        outString += arr[i].value + '<br>';
+        arr[i].classList.remove('error-task1');
+    }
+    if (document.querySelector('#oddRadio').checked == true) {
+            for (var i = 0; i < inputs.length; i++) {
+                if (i % 2 == 0) {
+                    if (inputs[i].value != '') {
+                        adder(inputs);
+                    } else {
+                        erorrer(inputs);
+                        return;
+                    }
+                }
+            }
+        } else if (document.querySelector('#evenRadio').checked == true) {
 
+            for (var i = 0; i < inputs.length; i++) {
+                if (i % 2 != 0) {
+                    if (inputs[i].value != '') {
+                        adder(inputs);
+                    } else {
+                        erorrer(inputs);
+                        return;
+                    }
+                }
+            }
+        } else {
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].value != '') {
+                    adder(inputs);
+                } else {
+                    erorrer(inputs);
+                    return;
+                }
+            }
+        }
     out.innerHTML = outString;
-    console.log(outString);
 });
 // END OF 1-3 TASKS
 
 document.querySelector('.openerWindow').addEventListener('click', function(e) {
+    function stylize(elem) {
+        elem.style.width = '300px';
+        elem.style.border = '1px solid #77A1D3';
+        elem.style.boxShadow = '0px 0px 10px #77A1D3';
+        elem.style.fontFamily = '"Roboto", sans-serif';
+        elem.style.borderRadius = '5px';
+        elem.style.padding = '15px';
+        elem.style.background = 'none';
+        elem.style.color = '#a5caf6';
+        elem.style.fontWeight = '300';
+        elem.style.fontSize = '13px';
+        elem.style.marginLeft = '40px';
+        elem.style.marginTop = '40px';
+        elem.style.cursor = 'pointer';
+    }
+
     var secondTaskOut = document.createElement('p');
     secondTaskOut.className = 'second-task-out';
-    var windowSecondTask = window.open('about:blank', 'Choose option', 'width=400,height=260,top=300, left=600');
-    var firstOptionButton = windowSecondTask.document.createElement('button');
-    var secondOptionButton = windowSecondTask.document.createElement('button');
-    firstOptionButton.innerHTML = 'Можешь нажать на меня например, я первый';
-    firstOptionButton.style.width = '300px';
-    firstOptionButton.style.border = '1px solid #77A1D3';
-    firstOptionButton.style.boxShadow = '0px 0px 10px #77A1D3';
-    firstOptionButton.style.fontFamily = '"Roboto", sans-serif';
-    firstOptionButton.style.borderRadius = '5px';
-    firstOptionButton.style.padding = '15px';
-    firstOptionButton.style.background = 'none';
-    firstOptionButton.style.color = '#a5caf6';
-    firstOptionButton.style.fontWeight = '300';
-    firstOptionButton.style.fontSize = '13px';
-    firstOptionButton.style.marginLeft = '40px';
-    firstOptionButton.style.marginTop = '40px';
-    firstOptionButton.style.cursor = 'pointer';
+    secondTaskOut.addEventListener('click', function(e) {
+        this.remove();
+    });
 
-    secondOptionButton.innerHTML = 'Или на меня нажать можешь например, я второй';
-    secondOptionButton.style.width = '300px';
-    secondOptionButton.style.border = '1px solid #77A1D3';
-    secondOptionButton.style.boxShadow = '0px 0px 10px #77A1D3';
-    secondOptionButton.style.fontFamily = '"Roboto", sans-serif';
-    secondOptionButton.style.borderRadius = '5px';
-    secondOptionButton.style.padding = '15px';
-    secondOptionButton.style.background = 'none';
-    secondOptionButton.style.color = '#a5caf6';
-    secondOptionButton.style.fontWeight = '300';
-    secondOptionButton.style.fontSize = '13px';
-    secondOptionButton.style.marginLeft = '40px';
-    secondOptionButton.style.marginTop = '40px';
-    secondOptionButton.style.cursor = 'pointer';
-    windowSecondTask.document.body.style.backgroundImage = 'linear-gradient(to right, #16222A 0%, #3A6073 51%, #16222A 100%)';
-    //
-    windowSecondTask.document.body.appendChild(firstOptionButton);
-    windowSecondTask.document.body.appendChild(secondOptionButton);
+    var windowSecondTask = window.open('about:blank', 'Choose option', 'width=400,height=260,top=300, left=600');
+
+    var firstOptionButton = windowSecondTask.document.createElement('button');
+    firstOptionButton.className = 'new-window';
+    firstOptionButton.innerHTML = 'Можешь нажать на меня например, я первый';
     firstOptionButton.addEventListener('click', function(e) {
         document.body.insertBefore(secondTaskOut, captionTask5);
         secondTaskOut.innerHTML = 'Вы нажали на первую кнопку, я угадал? :)<br> И если результат вы уже увидели, то можете нажать на меня чтобы я вам не мешал';
         windowSecondTask.close()
         return whatOption;
     });
+
+    var secondOptionButton = windowSecondTask.document.createElement('button');
+    secondOptionButton.innerHTML = 'Или на меня нажать можешь например, я второй';
     secondOptionButton.addEventListener('click', function(e) {
         document.body.insertBefore(secondTaskOut, captionTask5);
         secondTaskOut.innerHTML = 'Вы нажали на вторую кнопку, я угадал? :) <br> И если результат вы уже увидели, то можете нажать на меня чтобы я вам не мешал';
         windowSecondTask.close()
         return whatOption;
     });
-    secondTaskOut.addEventListener('click', function(e) {
-        this.remove();
-    });
+
+    stylize(firstOptionButton);
+    stylize(secondOptionButton);
+
+    windowSecondTask.document.body.style.backgroundImage = 'linear-gradient(to right, #16222A 0%, #3A6073 51%, #16222A 100%)';
+    //
+    windowSecondTask.document.body.appendChild(firstOptionButton);
+    windowSecondTask.document.body.appendChild(secondOptionButton);
+
 });
 // END OF FOURTH TASK
 
 fifthTaskList.querySelectorAll('li').forEach(function  (element) {
-    element.addEventListener('click', function (e) {
-        if (this.className == '') {
-            this.classList.add('task5-red');
-        } else if (this.className != '') {
-            this.classList.remove(this.className);
-        }
-    });
+    element.addEventListener('click', colorizer);
 })
 document.querySelector('#elementListAdder').addEventListener('click', function(e) {
     var li = document.createElement('li');
+        li.addEventListener('click', colorizer);
+
         liText = document.querySelector('#elementListEnter').value;
-        li.addEventListener('click', function(e) {
-            if (this.className == '') {
-                this.classList.add('task5-red');
-            } else if (this.className != '') {
-                this.classList.remove(this.className);
-            }
-        });
         if (liText != '') {
             li.innerHTML = liText;
         }
@@ -187,17 +189,9 @@ blockInfoTask7.className = 'block-info-task-7';
 
 document.querySelectorAll('.img-task-7').forEach(function (elem) {
     elem.addEventListener('mouseenter', function(e) {
-        var src, alt;
+        var src = attributeCheker(event, this.src, 'src', elem),
+            alt = attributeCheker(event, this.alt, 'alt', elem);
 
-        (this.src != '') ? src = 'src = ' + this.src + '<br>' : src = 'src = <span class="error">Атрибут отсутствует</span><br>';
-        if (this.alt != '') {
-            alt = 'alt = ' + this.alt + '<br>';
-        }
-        else {
-            alt = 'alt = <span class="error">Атрибут отсутствует</span><br>';
-            this.style.border = '2px solid red';
-        }
-         (this.alt != '') ? alt = 'alt = ' + this.alt + '<br>' : alt = 'alt = <span class="error">Атрибут отсутствует</span><br>';
         blockInfoTask7.innerHTML = 'tag = ' + this.tagName + '<br>' + src + alt;
         document.querySelectorAll('.task-wrap')[1].appendChild(blockInfoTask7);
     });
@@ -207,12 +201,12 @@ document.querySelectorAll('.img-task-7').forEach(function (elem) {
 })
 document.querySelectorAll('.link-task-7').forEach(function (elem) {
     elem.addEventListener('mouseenter', function(e) {
-        var href, title, target;
-
-        (this.href != '') ? href = 'href = ' + this.href + '<br>' : href = 'href = <span class="error">Атрибут отсутствует</span><br>';
-        (this.title != '') ? title = 'title = ' + this.title + '<br>' : title = 'title = <span class="error">Атрибут отсутствует</span><br>';
-        (this.target != '') ? target = 'target = ' + this.target + '<br>' : target = 'target = <span class="error">Атрибут отсутствует</span><br>';
-
+        var href = attributeCheker(event, this.href, 'href', elem),
+            title = attributeCheker(event, this.title, 'title', elem),
+            target = attributeCheker(event, this.target, 'target', elem);
+    elem.addEventListener('mouseleave', function(e) {
+        this.style.border = 'none';
+    });
         blockInfoTask7.innerHTML = 'tag = ' + this.tagName + '<br>' + href + title + target;
         document.querySelectorAll('.task-wrap')[1].appendChild(blockInfoTask7);
     });
@@ -226,15 +220,28 @@ document.querySelector('#chekerOfHeading').addEventListener('click', function(e)
         h4 = document.querySelectorAll('h4'),
         h5 = document.querySelectorAll('h5'),
         h6 = document.querySelectorAll('h6'),
+        outStr = '',
         out = document.querySelector('#nineTaskOut'),
         meta = document.querySelectorAll('meta'),
         title, description, keywords = '';
-    (h1.length != 0) ? out.innerHTML += 'На странице h1 - ' + h1.length + ' штук.<br>' : out.innerHTML += '<span class="error">На странице h1 отсутствуют.</span><br>';
-    (h2.length != 0) ? out.innerHTML += 'На странице h2 - ' + h2.length + ' штук.<br>' : out.innerHTML += '<span class="error">На странице h2 отсутствуют.</span><br>';
-    (h3.length != 0) ? out.innerHTML += 'На странице h3 - ' + h3.length + ' штук.<br>' : out.innerHTML += '<span class="error">На странице h3 отсутствуют.</span><br>';
-    (h4.length != 0) ? out.innerHTML += 'На странице h4 - ' + h4.length + ' штук.<br>' : out.innerHTML += '<span class="error">На странице h4 отсутствуют.</span><br>';
-    (h5.length != 0) ? out.innerHTML += 'На странице h5 - ' + h5.length + ' штук.<br>' : out.innerHTML += '<span class="error">На странице h5 отсутствуют.</span><br>';
-    (h6.length != 0) ? out.innerHTML += 'На странице h6 - ' + h6.length + ' штук.<br>' : out.innerHTML += '<span class="error">На странице h6 отсутствуют.</span><br>';
+
+    function captionChecker(tag, out, tagStr) {
+        (tag.length != 0) ? outStr += 'На странице '+ tagStr + ' - ' + tag.length + ' штук.<br>' : outStr += '<span class="error">На странице ' + tagStr + ' отсутствуют.</span><br>';
+        return outStr;
+    }
+    function metaChecker(atr, out, attrStr) {
+        (atr != '') ? out.innerHTML += 'Длина meta ' + attrStr + ' = ' + atr.length + '<br>' : out.innerHTML += '<span class="error">meta '+ attrStr +' отсутствует</span><br>';
+    }
+    captionChecker(h1, outStr, 'h1');
+    captionChecker(h2, outStr, 'h2');
+    captionChecker(h3, outStr, 'h3');
+    captionChecker(h4, outStr, 'h4');
+    captionChecker(h5, outStr, 'h5');
+    captionChecker(h5, outStr, 'h5');
+
+    out.innerHTML = outStr;
+
+
     // END OF TASK 9
 
     meta.forEach(function (elem) {
@@ -249,7 +256,7 @@ document.querySelector('#chekerOfHeading').addEventListener('click', function(e)
             return keywords;
         }
     });
-    (title != '') ? out.innerHTML += 'Длина meta title = ' + title.length + '<br>' : out.innerHTML += '<span class="error">meta title отсутствует</span><br>';
-    (description != '') ? out.innerHTML += 'Длина meta description = ' + description.length + '<br>' : out.innerHTML += '<span class="error">meta description отсутствует</span><br>';
-    (keywords != '') ? out.innerHTML += 'keywords = ' + keywords + '<br>' : out.innerHTML += '<span class="error">meta keywords отсутствует</span><br>';
+    metaChecker(title, out, 'title');
+    metaChecker(description, out, 'description');
+    metaChecker(keywords, out, 'keywords');
 });

@@ -27,7 +27,7 @@
 body {
     background-image: linear-gradient(to right, #16222A 0%, #3A6073 51%, #16222A 100%);
 }
-input[type='text'], .link-task-7, li, label, h3, button, p{
+.firstTaskInput, #elementListEnter, .link-task-7, li, label, h3, button, p{
     width: 150px;
     padding: 15px;
     border: 1px solid #77A1D3;
@@ -80,11 +80,28 @@ li {
     margin: 10px auto;
 }
 .error-task1 {
-    display: block;
-    width: 30px;
-    border: none;
-    color: red;
+    border: 1px solid red;
+    box-shadow: 0px 0px 10px red;
+}
+.new-window {
+    width: 300px;
+    border: 1px solid #77A1D3;
+    box-shadow: 0px 0px 10px #77A1D3;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    padding: 15px;
+    background: none;
+    color: #a5caf6;
+    font-weight: 300;
     font-size: 13px;
+    margin-left: 40px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.blockFirstTask {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
 }
 .second-task-out {
     padding: 15px;

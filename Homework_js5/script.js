@@ -25,6 +25,11 @@ document.querySelector('#blockAdder').addEventListener('click', function(e) {
             this.style.borderRadius = '50%';
         });
     });
+    secondTaskDivs.forEach(function(element) {
+        element.addEventListener('mouseleave', function(e) {
+            this.style.borderRadius = '0';
+        });
+    });
 });
 
 // END OF THITD TASK
