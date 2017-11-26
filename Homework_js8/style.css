@@ -1,9 +1,9 @@
 #movie-search__name {
     width: 250px;
-    padding: 10px;
+    padding: 11px;
+    border: 1px solid gray;
     border-radius: 15px;
     outline: 0;
-    box-shadow: 0 0 10px black;
     font-size: 13px;
 }
 .category {
@@ -13,8 +13,11 @@
     width: 100px;
     padding: 12px;
     border-radius: 15px;
+    border: 1px solid gray;
     font-size: 13px;
     outline: 0;
+    cursor: pointer;
+
 }
 .movie-gallery {
     display: -webkit-flex;

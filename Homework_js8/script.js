@@ -59,7 +59,7 @@ const fetchMovieList = (endPoint, page = '', query = '') => {
                 renderMovieItem(gallery, data.vote_average, data.poster_path, data.title, data.overview, data.release_date);
             }
             })
-        .catch(err => console.log(err));
+        .catch(err => alert(err));
 };
 
 const clearMoiveList = () => {
