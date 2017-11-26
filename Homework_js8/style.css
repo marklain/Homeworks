@@ -6,8 +6,11 @@
     box-shadow: 0 0 10px black;
     font-size: 13px;
 }
-.movie-search__submit {
-    width: 70px;
+.category {
+    margin-top: 15px;
+}
+.movie-search__submit, .category__popular, .category__latest, .category__top-rated{
+    width: 100px;
     padding: 12px;
     border-radius: 15px;
     font-size: 13px;
