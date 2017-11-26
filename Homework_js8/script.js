@@ -61,21 +61,6 @@ const fetchMovieList = (endPoint, page = '', query = '') => {
             })
         .catch(err => console.log(err));
 };
-const fetchPopularMovieList = () => {
-    let apiUrl = `${endPointPopular}${apiKey}&page=1`;
-    fetch(apiUrl)
-        .then(response => {
-            if (response.ok) {
-                return response.json();
-            }
-            throw new Error(`Error while fetching: ${response.statusText}`);
-        })
-        .then(data => {
-            let result = data.results;
-            result.forEach(item => renderMovieItem(gallery, item.vote_average, item.poster_path, item.title, item.overview, item.release_date))
-        })
-        .catch(err => console.log(err));
-}
 
 const clearMoiveList = () => {
     document.querySelectorAll('.movie-card').forEach((elem) => {
@@ -83,8 +68,6 @@ const clearMoiveList = () => {
     });
 
 }
-
-
 
 movieSearchForm.addEventListener('submit', (e) => {
     e.preventDefault();
