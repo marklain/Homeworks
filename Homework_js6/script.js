@@ -19,6 +19,7 @@ function attributeCheker(event, atr, str, element) {
     return atr;
 }
 document.querySelector('#inputAdder').addEventListener('click', function(e) {
+    e.preventDefault();
     // this.insertAdjacentHTML('afterEnd', '<input type="text"><button id="inputDeleter">-</button>');
     if (form.querySelectorAll('.firstTaskInput').length > 4) {
         alert('Превышено количество допустимых INPUT');
@@ -44,6 +45,7 @@ document.querySelector('#inputAdder').addEventListener('click', function(e) {
 
 
 document.querySelector('#getInfoFirstTask').addEventListener('click', function(e) {
+    e.preventDefault();
     var inputs = document.querySelectorAll('.firstTaskInput');
     var out = document.querySelector('#firstTaskOut');
     var outString = '';

@@ -1,23 +1,22 @@
-const endPointByName =   'https://api.themoviedb.org/3/search/movie?',
-      endPointPopular =  'https://api.themoviedb.org/3/movie/popular?',
-      endPointLatest =   'https://api.themoviedb.org/3/movie/latest?',
-      endPointTopRated = 'https://api.themoviedb.org/3/movie/top_rated?',
-      apiKey =           'api_key=f24a0fd18f52218851075901c5a108a0',
-      movieSearchForm =   document.querySelector('#movie-search'),
-      movieName =         document.querySelector('#movie-search__name'),
-      gallery =           document.querySelector('.movie-gallery'),
-      popularButton =     document.querySelector('.category__popular'),
-      latestButton =      document.querySelector('.category__latest'),
-      topRatedButton =    document.querySelector('.category__top-rated');
-
+const endPointByName = 'https://api.themoviedb.org/3/search/movie?',
+    endPointPopular = 'https://api.themoviedb.org/3/movie/popular?',
+    endPointLatest = 'https://api.themoviedb.org/3/movie/latest?',
+    endPointTopRated = 'https://api.themoviedb.org/3/movie/top_rated?',
+    apiKey = 'api_key=f24a0fd18f52218851075901c5a108a0',
+    movieSearchForm = document.querySelector('#movie-search'),
+    movieName = document.querySelector('#movie-search__name'),
+    gallery = document.querySelector('.movie-gallery'),
+    popularButton = document.querySelector('.category__popular'),
+    latestButton = document.querySelector('.category__latest'),
+    topRatedButton = document.querySelector('.category__top-rated');
 
 const renderMovieItem = (parrent, rateText, posterSrc, movieNameText, descriptionText, releaseText) => {
-    let div =         document.createElement('div'),
-        rate =        document.createElement('p'),
-        poster =      document.createElement('img'),
-        movieName =   document.createElement('p');
-        description = document.createElement('p'),
-        release =     document.createElement('p');
+    let div = document.createElement('div'),
+        rate = document.createElement('p'),
+        poster = document.createElement('img'),
+        movieName = document.createElement('p');
+    description = document.createElement('p'),
+        release = document.createElement('p');
     div.className = 'movie-card';
     rate.className = 'movie-card__rate';
     rate.innerHTML = `Rating: ${rateText}`;
@@ -58,7 +57,7 @@ const fetchMovieList = (endPoint, page = '', query = '') => {
             } else {
                 renderMovieItem(gallery, data.vote_average, data.poster_path, data.title, data.overview, data.release_date);
             }
-            })
+        })
         .catch(err => alert(err));
 };
 
