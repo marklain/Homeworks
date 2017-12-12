@@ -1,9 +1,9 @@
 import React from 'react';
-import NavListItem from './NavListItem';
-import MovieCard from './movie-card/MovieCard';
-import MovieForm from './movie-form/MovieForm';
-import movies from './movie-card/movies';
-import ChipsListItem from './movie-card/ChipsListItem';
+import NavListItem from './Nav-list-item';
+import MovieCard from './Movie-card';
+import MovieForm from './Movie-form';
+import movies from '../movies.js';
+import ChipsListItem from './Chip-list-item';
 
 class App extends React.Component {
     render() {
