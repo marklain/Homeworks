@@ -7,6 +7,15 @@ import ChipsListItem from './Chip-list-item';
 
 class App extends React.Component {
     render() {
+
+        const items = movies.map(movie => {
+            return (
+                <MovieCard
+                    {...movie}
+                    chipList={movie.genres.map(genre => <li className="ChipsList__item">{genre}</li>)}
+                />
+            )
+        })
         return (
             <div className="App">
                 <header className="Header">
@@ -19,26 +28,7 @@ class App extends React.Component {
                 </header>
                 <div className="App__body">
                     <div className="MovieList">
-                        <MovieCard
-                            {...movies[0]}
-                            chipList={movies[0].genres.map(genre => <li className="ChipsList__item">{genre}</li>)}
-                        />
-                        <MovieCard
-                            {...movies[1]}
-                            chipList={movies[1].genres.map(genre => <li className="ChipsList__item">{genre}</li>)}
-                        />
-                        <MovieCard
-                            {...movies[2]}
-                            chipList={movies[2].genres.map(genre => <li className="ChipsList__item">{genre}</li>)}
-                        />
-                        <MovieCard
-                            {...movies[3]}
-                            chipList={movies[3].genres.map(genre => <li className="ChipsList__item">{genre}</li>)}
-                        />
-                        <MovieCard
-                            {...movies[4]}
-                            chipList={movies[4].genres.map(genre => <li className="ChipsList__item">{genre}</li>)}
-                        />
+                        {items}
                     </div>
                     <MovieForm />
                 </div>
