@@ -8,9 +8,10 @@ import ChipsListItem from './Chip-list-item';
 class App extends React.Component {
     render() {
 
-        const items = movies.map(movie => {
+        const items = movies.map((movie) => {
             return (
                 <MovieCard
+                    key={movie.id}
                     {...movie}
                     chipList={movie.genres.map(genre => <li className="ChipsList__item">{genre}</li>)}
                 />
