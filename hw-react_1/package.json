@@ -15,5 +15,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage" : "http://vladiasem.github.io/Homeworks/hw-react_1/build"
+  "homepage" : "http://vladiasem.github.io/Homeworks/hw-react_1/build/"
 }
