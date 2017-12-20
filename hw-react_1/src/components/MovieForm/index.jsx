@@ -1,20 +1,20 @@
 import React, {Component} from 'react';
 
-class MovieForm extends Component {
+export default class MovieForm extends Component {
 
     render() {
         return (
-            <form class="MovieForm">
-                <label class="MovieForm__label">
+            <form className="MovieForm">
+                <label className="MovieForm__label">
                     Title
-                    <input type="text" class="MovieForm__input"/></label>
-                <label class="MovieForm__label">
+                    <input type="text" className="MovieForm__input"/></label>
+                <label className="MovieForm__label">
                     Description
-                    <textarea class="MovieForm__txtarea" rows="8"></textarea>
+                    <textarea className="MovieForm__txtarea" rows="8"></textarea>
                 </label>
-                <label class="MovieForm__label">
+                <label className="MovieForm__label">
                     Rating
-                    <select class="MovieForm__input">
+                    <select className="MovieForm__input">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -27,11 +27,9 @@ class MovieForm extends Component {
                         <option value = "10" > 10</option>
                     </select>
                 </label>
-                <button class="MovieForm__submit" type="submit">submit</button>
+                <button className="MovieForm__submit" type="submit">submit</button>
             </form>
             );
             }
 
-}
-
-export default MovieForm;
+};
