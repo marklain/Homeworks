@@ -63,10 +63,10 @@
 }
 
 .MovieInfo__title {
-    width: 90%;
+    width: 70%;
     line-height: 1.5;
     margin-bottom: 10px;
-    white-space: wrap
+    word-break: break-all
 }
 
 .MovieInfo__descr {
@@ -144,12 +144,6 @@
     background-color: #3f51b5
 }
 
-.MovieCard__img {
-    display: block;
-    width: 40%;
-    height: auto
-}
-
 .MovieList {
     display: -ms-flexbox;
     display: flex;
@@ -215,6 +209,30 @@
     background-color: #ff5722;
     -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .3);
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .3)
+}
+
+.MovieForm__genres {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 16px
+}
+
+.MovieForm__genres label {
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 8px;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #424242;
+    cursor: pointer
+}
+
+.MovieForm__genres input {
+    margin-right: 4px;
+    width: 20px;
+    height: 20px
 }
 
 .App {

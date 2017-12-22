@@ -9,14 +9,15 @@ export default class MovieCard extends React.Component {
         rating: PropTypes.string.isRequired,
         chipList: PropTypes.arrayOf(
             PropTypes.shape().isRequired
-        ).isRequired
+        ).isRequired,
+        cardDeleter: PropTypes.func.isRequired
     }
 
     render() {
-        let { title, descr, rating, chipList } = this.props;
+        let { title, descr, rating, chipList, cardDeleter } = this.props;
         return (
             <div className="MovieCard">
-                <button className="MovieCard__btn MovieCard__btn--del">delete</button>
+                <button onClick={cardDeleter} className="MovieCard__btn MovieCard__btn--del">delete</button>
                 <div className="MovieInfo__info">
                     <h2 className="MovieInfo__title">{title}</h2>
                     <p className="MovieInfo__descr">{descr}</p>
