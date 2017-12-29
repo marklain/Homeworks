@@ -14,7 +14,7 @@ export default class App extends Component {
         .then(data => {
             this.setState({
                 movieItems: data,
-                watchList: JSON.parse(localStorage.getItem('movie-watch-list'))
+                watchList: JSON.parse(localStorage.getItem('movie-watch-list')) || []
             })
         })
 
