@@ -21,15 +21,3 @@ export function fetchData(url) {
     })
     .catch(err => console.error(err));
 };
-
-export function addActiveClassToLink(selector) {
-    const NavLinks = document.querySelectorAll(`.${selector}`);
-    NavLinks.forEach(link => {
-        link.addEventListener('click', e => {
-            NavLinks.forEach(link => {
-                link.classList.remove(`${selector}--active`);
-            })
-            link.classList.add(`${selector}--active`);
-        });
-    })
-}
