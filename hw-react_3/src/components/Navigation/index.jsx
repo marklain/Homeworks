@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 const Navigation = (props) => (
     <nav className="Navigation">
-        <NavLink to="/" activeClassName="Navigation__link--active" className="Navigation__link">Home</NavLink>
+        <NavLink exact to="/" activeClassName="Navigation__link--active" className="Navigation__link">Home</NavLink>
         <NavLink to="/movies" activeClassName="Navigation__link--active" className="Navigation__link">movies</NavLink>
         <NavLink to="/about" activeClassName="Navigation__link--active" className="Navigation__link">about</NavLink>
     </nav>
